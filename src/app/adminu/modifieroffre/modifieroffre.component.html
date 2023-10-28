@@ -1,0 +1,87 @@
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="d-flex justify-content-end mt-3">
+        <a type="button" (click)="onCancel()" class="btn btn-secondary mt-3">
+            <i ></i> Liste des offres
+        </a>
+
+      </div>
+      <div class="card">
+    
+        <div class="card-header">Modifier une Offre</div>
+   
+
+        <div class="card-body">
+          <form [formGroup]="offreForm" >
+              <div class="form-group">
+                  <label > Nom du centre</label>
+                  <input type="text" formControlName="nomcentre" class="form-control">
+                  <div class="alert alert-danger" role="alert"
+                    *ngIf="offreForm.controls['nomcentre'].errors?.['required'] && !offreForm.controls['nomcentre'].pristine">
+                        Nom du centre est obligatoire !
+                       </div>
+                </div>
+
+            <div class="form-group">
+              <label >Nom du offre</label>
+              <input type="text" formControlName="nomo" class="form-control">
+              <div class="alert alert-danger" role="alert"
+                 *ngIf="offreForm.controls['nomo'].errors?.['required'] && !offreForm.controls['nomo'].pristine">
+                   Nom de l'offre est obligatoire !
+                    </div>
+            </div>
+            <div class="form-group">
+              <label >Description</label>
+              <textarea formControlName="description" class="form-control"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label >Prix</label>
+              <input type="number" formControlName="prix" class="form-control">
+              <div class="alert alert-danger" role="alert"
+                *ngIf="offreForm.controls['prix'].errors?.['required'] && !offreForm.controls['prix'].pristine">
+                    Prix est obligatoire !
+                   </div>
+            </div>
+
+            <div class="form-group">
+              <label >Promotion Date</label>
+              <input type="date" formControlName="promotionDate" class="form-control">
+              <div class="alert alert-danger" role="alert"
+                *ngIf="offreForm.controls['promotionDate'].errors?.['required'] && !offreForm.controls['promotionDate'].pristine">
+                    Date de promotion est obligatoire !
+                  </div>
+            </div>
+
+            <div class="form-group">
+              <label >Durée</label>
+               <input type="text" formControlName="duree" class="form-control">
+              <div class="alert alert-danger" role="alert"
+                *ngIf="offreForm.controls['duree'].errors?.['required'] && !offreForm.controls['duree'].pristine">
+                       Durée est obligatoire !
+                   </div>
+            </div>
+            <div class="form-group">
+              <label >image</label>
+              <input type="file" formControlName="imageo" class="form-control-file">
+            </div>
+            <div class="form-group">
+              <label for="categorie">Catégorie</label>
+              <select formControlName="categorie" class="form-control">
+                <option *ngFor="let category of categorie" [value]="category">{{ category }}</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-between mt-3">
+              <button type="button" class="btn btn-secondary ml-auto btn-grege" (click)="onCancel()">Annuler</button>
+              <button type="submit" class="btn btn-success bg-rose ml-auto " (click)="updateoffre()">Modifier</button>
+          </div>
+          
+      
+         </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

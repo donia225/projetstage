@@ -1,0 +1,22 @@
+.text-rose{
+  color: #FF80C6;
+}
+
+.text-corail{
+    color: #FF929B;
+}
+.btn-radius {
+    padding: 0.6em 2em;
+    color: #fff;
+    background-color: violet;
+    font-size: 1.1em;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 1em;
+    border-color: violet; /* Ajoutez cette ligne pour définir la couleur de la bordure */
+}
+.btn-radius:hover{
+    background-color:#FF80C6 ;
+    border-color: #FF80C6;
+
+}

@@ -1,0 +1,18 @@
+.bg-rose{
+    background-color: violet;
+    border-color: violet;
+  }
+  .bg-rose:hover {
+    background-color: #9c4dcc; /* Couleur de survol (plus foncée) de votre choix */
+    border-color: #9c4dcc; /* Couleur de la bordure au survol */
+    color: white; /* Couleur du texte au survol */
+  }
+  .btn-grege{
+    background-color: #B6A6B5;
+    border-color: #B6A6B5;
+  }
+  .btn-grege:hover{
+    background-color: #847d84;
+    border-color:#847d84;
+  
+  }

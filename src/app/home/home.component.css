@@ -1,0 +1,40 @@
+.custom-card-img {
+  max-width: 300px; /* Changer la valeur selon vos besoins */
+  height: auto;
+}
+
+
+.custom-card {
+  min-height: 350px; /* Ajustez la valeur selon vos besoins */
+}
+
+
+.pink-text {
+  color:rgb(247, 175, 247); /* Couleur rose */
+}
+.bg-rose{
+  background-color: violet;
+  border-color: violet;
+}
+.bg-rose:hover{
+  background-color:#ff99cc ;
+  border-color: #ff99cc;
+}
+.bg-green {
+  background-color: green; /* Couleur verte */
+  color: white; /* Texte en blanc pour contraste */
+  padding: 2px 5px; /* Espacement pour améliorer l'apparence */
+  border-radius: 3px; /* Bordure arrondie pour le fond */
+}
+.btn-grege{
+  background-color: #B6A6B5;
+  border-color: #B6A6B5;
+}
+.btn-grege:hover{
+  background-color: #847d84;
+  border-color:#847d84;
+
+}
+
+
+  

@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg bg-blaccc">
+  <div class="container-fluid">
+     <a class="navbar-brand white-text" href="/home">
+      <img src="/assets/img/bhl.png" alt="BeautyHeaven Logo" style="width: 10%;" />BeautyHeaven
+    </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link  white-text" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link white-text" aria-disabled="page" href="/aboutus"> About Us</a>
+          </li>
+   
+        <!--   <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle white-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/">Action</a></li>
+              <li><a class="dropdown-item" href="">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link white-text" aria-disabled="page" (click)="loadOffresByCategorie('Coiffure & Esthétique')"> Coiffure & Esthétique</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link white-text" aria-disabled="page" (click)="loadOffresByCategorie('Hammam, Spa et Thalasso')"> Hammam, Spa et Thalasso</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link white-text" aria-disabled="page" (click)="loadOffresByCategorie('Amincissement')"> Amincissement</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-secondary bg-rose " type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link white-text" href="/signup">Sign Up</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link white-text" href="/login">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+ 
+
+  </nav>
+ 

@@ -1,0 +1,81 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+.icon-small {
+    width: 24px; /* Ajustez la largeur selon vos besoins */
+    height: 24px; /* Ajustez la hauteur selon vos besoins */
+
+  }
+  .btn-small {
+    padding: 0.25rem 0.5rem; /* Ajustez les valeurs de remplissage selon vos besoins */
+    font-size: 0.75rem; /* Ajustez la taille de la police selon vos besoins */
+  }
+  .btn-green {
+    background-color: #00cc00; /* Couleur verte de votre choix */
+    border-color: #00cc00; /* Couleur de la bordure */
+    color: white; /* Couleur du texte */
+  }
+  .btn-grey {
+    background-color: #FF80C6; /* Couleur grise de votre choix */
+    border-color: #FF80C6; /* Couleur de la bordure */
+    color: white; /* Couleur du texte */
+}
+.btn-grey:hover {
+  background-color: #ff99cc; /* Couleur de survol rose/violet */
+  border-color: #ff99cc; /* Couleur de la bordure au survol */
+  color: white; /* Couleur du texte au survol (blanc) */
+}
+
+.bg-rose{
+  background-color: violet;
+  border-color: violet;
+}
+.bg-rose:hover {
+  background-color: #ff99cc; /* Couleur de survol (plus foncée) de votre choix */
+  border-color: #ff99cc; /* Couleur de la bordure au survol */
+  color: white; /* Couleur du texte au survol */
+}
+
+.text-white{
+  color: white;
+}
+.btn-custom-edit {
+  background-color: #FFB277; /* Couleur orange de votre choix */
+  border-color: #FFB277; /* Couleur de la bordure */
+  color: white; /* Couleur du texte */
+}
+
+.btn-custom-edit:hover {
+  background-color: #ff99cc; /* Couleur orange plus foncée au survol */
+  border-color: #ff99cc;
+  color: white;
+}
+
+.btn-rouge{
+  background-color: #FF929B;
+  border-color: #FF929B;
+}
+.btn-rouge:hover {
+  background-color: #ff99cc; /* Couleur de survol plus claire */
+  border-color: #ff99cc; /* Couleur de la bordure au survol */
+  /* Autres styles au survol */
+}
+.btn-grege{
+  background-color: #B6A6B5;
+  border-color: #B6A6B5;
+}
+.btn-grege:hover{
+  background-color: #847d84;
+  border-color:#847d84;
+
+}
+.btn-corail{
+  background-color: #f0737d;
+  border-color: #f0737d;
+}
+.btn-corail:hover{
+  background-color: #ee4e5c;
+  border-color:#ee4e5c;
+
+}
+
+
+  

@@ -1,0 +1,47 @@
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+  
+  }
+  /* Ajoutez cette règle dans votre fichier CSS */
+/* Ajoutez ces règles dans votre fichier CSS */
+/* Ajoutez ces règles dans votre fichier CSS */
+.btn-outline-purple {
+  background-color: violet;
+  color: white;
+  border-color: violet;
+  transition: background-color 0.3s; /* Ajoutez une transition de couleur */
+}
+.btn-outline-purple:hover{
+  background-color: #9c4dcc;
+  border-color: #9c4dcc;
+}
+.btn-outline-purple:active,
+.btn-outline-purple:focus {
+  background-color: lavender; /* Changez la couleur d'arrière-plan lorsqu'il est actif ou en focus */
+  color: black; /* Changez la couleur du texte */
+  border-color: lavender; /* Changez la couleur de la bordure */
+}
+a.text-black-50 {
+  color: black; /* Couleur de texte par défaut */
+  transition: color 0.3s; /* Ajoutez une transition de couleur */
+}
+a.text-black-50:hover {
+  color: darkgray; /* Couleur de texte au survol (gris foncé) */
+}
+.custom-link {
+  color: black; /* Couleur de texte par défaut */
+  transition: color 0.3s; /* Ajoutez une transition de couleur */
+}
+
+.custom-link:hover {
+  color: darkgray; /* Couleur de texte au survol (gris foncé) */
+}
+
+

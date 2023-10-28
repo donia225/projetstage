@@ -1,0 +1,21 @@
+.bg-blaccc {
+    background-color: #212429; /*  */
+  }
+.white-text{
+   color: white;
+  }
+.white-text-home{
+    color: white !important;
+}
+.bg-rose{
+  background-color: #FF80C6;
+  color: white;
+  border-color: #FF80C6;
+}
+.bg-rose:hover{
+  background-color: violet;
+  border-color: violet;
+}
+a.white-text:hover{
+  color:violet;
+}

@@ -1,0 +1,124 @@
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/assets/img/bbbeauty.png" class="d-block w-100 mx-auto" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/img/off.png" class="d-block w-100 mx-auto" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/img/coiffure.png" class="d-block w-100 mx-auto" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <section>
+        <h3 class="text-center mb-2 pink-text">Nos Offres</h3>
+      </section>
+      </div>
+    </div>
+    
+    <div class="row justify-content-center">
+     <!--  <div class="col-md-3">
+        <div class="card custom-card">
+          <div class="card-body text-center">
+            <img src="assets/img/sauna.png" class="card-img-top custom-card-img" alt="Fissure in Sandstone"/>
+            <h5 class="card-title">Centre Balnea</h5>
+            <p class="card-text">Hamam +Massage +Enveloppement aux algues</p>
+            <a href="#" class="btn btn-primary bg-rose" data-bs-toggle="modal" data-bs-target="#offerModal">Voir l'offre</a>
+          </div>
+        </div>
+      </div> -->
+ 
+       <!--     <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle white-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-page">
+              <li><a class="dropdown-item" href="/">Action</a></li>
+              <li><a class="dropdown-item" href="">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>  -->
+      <div class="row">
+        <div class="col-md-4" *ngFor="let o of offre; let i = index">
+          <div class="card custom-card">
+            <img src="assets/img/sauna.png" class="card-img-top custom-card-img mx-auto" alt="Image de l'offre" />
+            <div class="card-body text-center">
+              <h5 class="card-title">{{ o.nomcentre }}</h5>
+              <p class="card-text">{{ o.nomo }}</p>
+              <p class="card-text">{{ o.description }}</p>
+              <p class="card-text">{{ o.prix }} DT</p>
+              <p class="card-text">Promotion Date: {{ o.promotionDate }}</p>
+<!--              <div id="countdown-{{ o.idOffre }}">
+        <span>{{ o.timeRemaining.hours }}</span>h
+        <span>{{ o.timeRemaining.minutes }}</span>m
+        <span>{{ o.timeRemaining.seconds }}</span>s
+      </div> -->
+           
+              <p class="card-text">Durée: {{ o.duree }}</p>
+              <a href="#" class="btn btn-primary bg-rose" data-bs-toggle="modal" data-bs-target="#offerModal" (click)="openOfferModal(o.idOffre)">Voir l'offre</a>
+          
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="modal fade" id="offerModal" tabindex="-1" aria-labelledby="offerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Informations</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="col-md-6">
+                <p><strong>Nom du centre :</strong>{{selectedoffre.nomcentre}}</p>
+                <p><strong>Nom :</strong>{{selectedoffre.nomo}}</p>
+                <p><strong>Description :</strong>{{selectedoffre.description}}</p>
+                <p><strong>Prix :</strong>{{selectedoffre.prix}}</p>
+                <p><strong>PromotionDate :</strong>{{selectedoffre.promotionDate}}</p>
+                <p><strong>Durée :</strong>{{selectedoffre.duree}}</p>
+                <p><strong>Image :</strong>{{selectedoffre.imageo}}</p>
+      
+                <div class="form-group">
+                  <label for="quantite">Quantité :</label>
+                  <div class="input-group">
+                    <button type="button" class="btn btn-secondary" (click)="decrementQuantity(selectedoffre)">-</button>
+                    <input type="number" class="form-control" id="quantite" [(ngModel)]="selectedoffre.quantite" name="quantite">
+                    <button type="button" class="btn btn-secondary" (click)="incrementQuantity(selectedoffre)">+</button>
+                  </div>
+                </div>
+             
+                <button href="#" class="btn btn-secondary" (click)="gotopanier(selectedoffre.idOffre)">
+                  <i class="fa fa-shopping-cart"></i> Acheter ({{ selectedoffre.quantite }})
+                </button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-grege" data-bs-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+  
+
+  
+  
